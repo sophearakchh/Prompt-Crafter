@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
-import { Upload, FileImage, FileVideo, X } from 'lucide-react';
-import { UploadedFile, MediaType } from '../types';
+import { Upload, X } from 'lucide-react';
+import { UploadedFile } from '../types';
 
 interface FileUploaderProps {
   onFileSelect: (file: UploadedFile) => void;

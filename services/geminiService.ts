@@ -1,6 +1,13 @@
 import { GoogleGenAI } from "@google/genai";
 import { ModelType, PromptStyle } from "../types";
 
+// Declare process to satisfy TypeScript compiler since it is injected by Vite at build time
+declare const process: {
+  env: {
+    API_KEY: string;
+  };
+};
+
 // Helper to convert Blob/File to Base64
 const fileToGenerativePart = async (file: File): Promise<{ inlineData: { data: string; mimeType: string } }> => {
   return new Promise((resolve, reject) => {
