@@ -1,0 +1,5 @@
+{
+  "name": "PromptCrafter",
+  "description": "Transform your images and videos into detailed, creative text prompts using Gemini AI. Ideal for reverse-engineering AI art prompts or generating accessibility captions.",
+  "requestFramePermissions": []
+}
